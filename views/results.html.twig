@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    <title>Word Repeat Counter</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Here are your original inputs:</h1>
+        <div class="row">
+            <div class="col s6">
+                <h3>Original Text:</h3>
+                <p>{{ originalString }}</p>
+            </div>
+            <div class="col s6">
+                <h3>Original Word to Check:</h3>
+                <p>{{ originalCheckRepeat }}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <h1>Your word was repeated:</h1>
+                <h4>{{ results }} times!</h4>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

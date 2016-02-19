@@ -10,20 +10,20 @@
     <div class="container">
         <div class="row">
             <h1>Check how many times a word is repeated!</h1>
-            <form class="col s12" method="post">
+            <form class="col s12" action="/results">
                 <div class="row">
                     <div class="input-field col s12">
                         <label for="input_string">Enter your text to check for repeats</label>
-                        <textarea id="input_string" class="materialize-textarea"></textarea>
+                        <textarea id="input_string" name="input_string" class="materialize-textarea"></textarea>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s12">
                         <label for="input_check_repeat">See how many times this word repeats</label>
-                        <input id="input_check_repeat" type="text" class="validate">
+                        <input id="input_check_repeat" name="input_check_repeat" type="text" class="validate">
                     </div>
                 </div>
-                <a class="waves-effect waves-light btn">Submit!</a>
+                <button type="submit"class="waves-effect waves-light btn">Submit!</button>
             </form>
         </div>
     </div>
