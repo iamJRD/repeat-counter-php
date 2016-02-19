@@ -13,11 +13,11 @@
         return $app["twig"]->render("home.html.twig");
     });
 
-    $app->get("/results", function() use ($app) {
-        $new_RepeatCounter = new RepeatCounter($_GET["input_string"], $_GET["input_check_repeat"]);
-        $result = $new_RepeatCounter->countRepeats($_GET["input_string"], $_GET["input_check_repeat"]);
+    $app->post("/results", function() use ($app) {
+        $new_RepeatCounter = new RepeatCounter($_POST["input_string"], $_POST["input_check_repeat"]);
+        $result = $new_RepeatCounter->countRepeats($_POST["input_string"], $_POST["input_check_repeat"]);
 
-        return $app["twig"]->render("results.html.twig", array("results" => $result, "originalString" => $_GET["input_string"], "originalCheckRepeat" => $_GET["input_check_repeat"]));
+        return $app["twig"]->render("results.html.twig", array("results" => $result, "originalString" => $_POST["input_string"], "originalCheckRepeat" => $_POST["input_check_repeat"]));
     });
 
     return $app;
