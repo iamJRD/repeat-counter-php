@@ -57,5 +57,16 @@
 
             $this->assertEquals("10", $result);
         }
+
+        function test_remove_case_sensitivity_and_characters()
+        {
+            $test_RepeatCounter = new RepeatCounter;
+            $input_string = "C!aT CAT ca1T cAt c-AT";
+            $input_check_repeat = "cat";
+
+            $result = $test_RepeatCounter->countRepeats($input_string, $input_check_repeat);
+
+            $this->assertEquals("5", $result);
+        }
     }
 ?>

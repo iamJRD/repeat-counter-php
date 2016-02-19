@@ -6,10 +6,16 @@
         {
             $count = 0;
 
-            $wordsArray = explode(" ", $input_string);
+            $onlyAlphaInputString = preg_replace("/[^A-Za-z ]/", "", $input_string);
+            $onlyAlphaInputCheckRepeat = preg_replace("/[^A-Za-z ]/", "", $input_check_repeat);
+
+            $lowerInputString = strtolower($onlyAlphaInputString);
+            $lowerInputCheckRepeat = strtolower($onlyAlphaInputCheckRepeat);
+
+            $wordsArray = explode(" ", $lowerInputString);
 
             foreach ($wordsArray as $word) {
-                if ($input_check_repeat == $word) {
+                if ($lowerInputCheckRepeat == $word) {
                     $count = $count + 1;
                 }
             }

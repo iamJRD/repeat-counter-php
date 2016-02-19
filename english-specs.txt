@@ -26,13 +26,13 @@ R = Word to count repeats
    times                           onto a cat"
                                R: "cat"
 
-        DONE                       
+        DONE
 5. return the correct number   S: "a a a a a a a"   "7"
    of occurrences for a string
    consisting only of choice   R: "a"
    word
 
-
+        DONE
 6. add functionality to         S: "C!aT-"          "1"
    work with strings with non-
    alphanumeric characters and  R: "CAT"
