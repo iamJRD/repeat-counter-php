@@ -26,7 +26,7 @@ R = Word to count repeats
    times                           onto a cat"
                                R: "cat"
 
-
+        DONE                       
 5. return the correct number   S: "a a a a a a a"   "7"
    of occurrences for a string
    consisting only of choice   R: "a"

@@ -46,5 +46,16 @@
 
             $this->assertEquals("3", $result);
         }
+
+        function test_only_repeat_word_in_string()
+        {
+            $test_RepeatCounter = new RepeatCounter;
+            $input_string = "a a a a a a a a a a";
+            $input_check_repeat = "a";
+
+            $result = $test_RepeatCounter->countRepeats($input_string, $input_check_repeat);
+
+            $this->assertEquals("10", $result);
+        }
     }
 ?>
