@@ -5,12 +5,12 @@ R = Word to count repeats
     EXPECTED BEHAVIOR           INPUT               OUTPUT
 
 
-
+        DONE
 1. return 0 for when choice    S: "a"               "0"
    repeat word never appears   R: "b"
    in test string
 
-
+        DONE
 2. return 1 for one word
    string where choice         S: "a"               "1"
    repeat word is the same     R: "a"

@@ -4,10 +4,12 @@
     {
         function countRepeats($input_string, $input_check_repeat)
         {
-            if ($input_string != $input_check_repeat)
-            {
-                return "0";
+            $count = 0;
+
+            if ($input_string == $input_check_repeat) {
+                $count = $count + 1;
             }
+            return $count;
         }
     }
 ?>
