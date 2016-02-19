@@ -5,66 +5,66 @@
     {
         function test_no_repeat()
         {
-            $test_RepeatCounter = new RepeatCounter;
-            $input_string = "a";
-            $input_check_repeat = "b";
+            $string_input = "a";
+            $word_input = "b";
+            $test_RepeatCounter = new RepeatCounter("a", "b");
 
-            $result = $test_RepeatCounter->countRepeats($input_string, $input_check_repeat);
+            $result = $test_RepeatCounter->countRepeats($string_input, $word_input);
 
             $this->assertEquals("0", $result);
         }
 
         function test_one_repeat_one_word_string()
         {
-            $test_RepeatCounter = new RepeatCounter;
-            $input_string = "a";
-            $input_check_repeat = "a";
+            $string_input = "a";
+            $word_input = "a";
+            $test_RepeatCounter = new RepeatCounter("a", "a");
 
-            $result = $test_RepeatCounter->countRepeats($input_string, $input_check_repeat);
+            $result = $test_RepeatCounter->countRepeats($string_input, $word_input);
 
             $this->assertEquals("1", $result);
         }
 
         function test_one_repeat_multi_word_string()
         {
-            $test_RepeatCounter = new RepeatCounter;
-            $input_string = "the cat in the hat";
-            $input_check_repeat = "cat";
+            $string_input = "the cat in the hat";
+            $word_input = "cat";
+            $test_RepeatCounter = new RepeatCounter("the cat in the hat", "cat");
 
-            $result = $test_RepeatCounter->countRepeats($input_string, $input_check_repeat);
+            $result = $test_RepeatCounter->countRepeats($string_input, $word_input);
 
             $this->assertEquals("1", $result);
         }
 
         function test_multi_repeat_multi_word_string()
         {
-            $test_RepeatCounter = new RepeatCounter;
-            $input_string = "the cat jumped over the cat onto a cat";
-            $input_check_repeat = "cat";
+            $string_input = "the cat jumped over the cat onto a cat";
+            $word_input = "cat";
+            $test_RepeatCounter = new RepeatCounter("the cat jumped over the cat onto a cat", "cat");
 
-            $result = $test_RepeatCounter->countRepeats($input_string, $input_check_repeat);
+            $result = $test_RepeatCounter->countRepeats($string_input, $word_input);
 
             $this->assertEquals("3", $result);
         }
 
         function test_only_repeat_word_in_string()
         {
-            $test_RepeatCounter = new RepeatCounter;
-            $input_string = "a a a a a a a a a a";
-            $input_check_repeat = "a";
+            $string_input = "a a a a a a a a a a";
+            $word_input = "a";
+            $test_RepeatCounter = new RepeatCounter("a a a a a a a a a a", "a");
 
-            $result = $test_RepeatCounter->countRepeats($input_string, $input_check_repeat);
+            $result = $test_RepeatCounter->countRepeats($string_input, $word_input);
 
             $this->assertEquals("10", $result);
         }
 
         function test_remove_case_sensitivity_and_characters()
         {
-            $test_RepeatCounter = new RepeatCounter;
-            $input_string = "C!aT CAT ca1T cAt c-AT";
-            $input_check_repeat = "cat";
+            $string_input = "C!aT CAT ca1T cAt c-AT";
+            $word_input = "cat";
+            $test_RepeatCounter = new RepeatCounter("C!aT CAT ca1T cAt c-AT", "cat");
 
-            $result = $test_RepeatCounter->countRepeats($input_string, $input_check_repeat);
+            $result = $test_RepeatCounter->countRepeats($string_input, $word_input);
 
             $this->assertEquals("5", $result);
         }
