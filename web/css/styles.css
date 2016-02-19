@@ -1,0 +1,21 @@
+a {
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #f00;
+}
+
+body {
+    text-align: center;
+    font-family: helvetica;
+}
+
+h1,
+.originalInputHeader {
+    color: #43c19f;
+}
+
+#results {
+    color: #f00;
+}
