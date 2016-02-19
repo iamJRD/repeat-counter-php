@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    <title>Word Repeat Counter</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>Check how many times a word is repeated!</h1>
+            <form class="col s12" method="post">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <label for="input_string">Enter your text to check for repeats</label>
+                        <textarea id="input_string" class="materialize-textarea"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <label for="input_check_repeat">See how many times this word repeats</label>
+                        <input id="input_check_repeat" type="text" class="validate">
+                    </div>
+                </div>
+                <a class="waves-effect waves-light btn">Submit!</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
