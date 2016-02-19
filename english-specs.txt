@@ -20,7 +20,7 @@ R = Word to count repeats
    string where choice word    R: "cat"
    repeats once
 
-
+        DONE
 4. return 3 for string where   S: "the cat jumped   "3"
    choice word appears 3           over the cat
    times                           onto a cat"

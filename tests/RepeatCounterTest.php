@@ -35,5 +35,16 @@
 
             $this->assertEquals("1", $result);
         }
+
+        function test_multi_repeat_multi_word_string()
+        {
+            $test_RepeatCounter = new RepeatCounter;
+            $input_string = "the cat jumped over the cat onto a cat";
+            $input_check_repeat = "cat";
+
+            $result = $test_RepeatCounter->countRepeats($input_string, $input_check_repeat);
+
+            $this->assertEquals("3", $result);
+        }
     }
 ?>
