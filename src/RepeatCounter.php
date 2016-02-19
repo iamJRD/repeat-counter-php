@@ -6,8 +6,12 @@
         {
             $count = 0;
 
-            if ($input_string == $input_check_repeat) {
-                $count = $count + 1;
+            $wordsArray = explode(" ", $input_string);
+
+            foreach ($wordsArray as $word) {
+                if ($input_check_repeat == $word) {
+                    $count = $count + 1;
+                }
             }
             return $count;
         }

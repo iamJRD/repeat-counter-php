@@ -15,7 +15,7 @@ R = Word to count repeats
    string where choice         S: "a"               "1"
    repeat word is the same     R: "a"
 
-
+        DONE
 3. return 1 for two word       S: "a cat"           "1"
    string where choice word    R: "cat"
    repeats once
@@ -31,3 +31,9 @@ R = Word to count repeats
    of occurrences for a string
    consisting only of choice   R: "a"
    word
+
+
+6. add functionality to         S: "C!aT-"          "1"
+   work with strings with non-
+   alphanumeric characters and  R: "CAT"
+   random case
