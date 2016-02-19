@@ -1,21 +1,28 @@
-a {
+a,
+#results {
     text-decoration: underline;
+    font-style: italic;
 }
 
-a:hover {
+a:hover,
+#results {
     color: #f00;
 }
 
 body {
     text-align: center;
-    font-family: helvetica;
+    font-family: verdana, sans-serif;
 }
 
-h1,
+h1 {
+    color: #3f51b5;
+}
+
 .originalInputHeader {
-    color: #43c19f;
+    color: #8c9eff;
 }
 
-#results {
-    color: #f00;
+.btn,
+.btn:hover {
+    background-color: #3f51b5;
 }
