@@ -1,42 +1,41 @@
 # Repeated Word Counter App
 
-## _*Jared Beckler*, February 2016_
+#### By: Jared Beckler | Epicodus | March 2016
 
-###Description
+This project was used to get familiar with PHP/Silex/Twig/PHPUnit and will take a user inputted string and word and give them the amount of times the word is appears in the string.
 
-_This web app will take user inputs from a form and use PHP to search the string for all instances of a repeated user selected word and return to count to the user._
+## Prerequisites
 
-###Set-Up/Installation
+You will need the following things properly installed on your computer.
 
-* _Clone from my GitHub page at_ https://github.com/jaredbeckler/repeat-counter-php
-* _Using your terminal, navigate into_ **repeat-counter-php**
-* _Run the command_ `composer install` _through your terminal in the project's home folder._
-* _Next, enter_ `cd web` _into your terminal and run_ `php -S localhost:8000` _to open a local server._
-* _In your web browser, enter_ **localhost:8000** _to view the web app._
+* [MAMP](https://www.mamp.info/en/downloads/)
 
-###Known Bugs
+## Installation
 
-* _There are currently no known bugs._
+* `git clone https://github.com/jaredbeckler/repeat-counter-php` this repository
+* Change into the new directory
 
-###Support and Contact Details
+## Running / Development
 
-_Please contact me through GitHub comments for any support, comments, or found bugs._
+* Run `composer install` in the project's home directory
+* Start MAMP
+* In your web browser, go to `localhost:8889` to view the app
 
-###Technologies Used
+## Known Bugs
 
-* _HTML_
-* _CSS_
-* _Materialize_
-* _PHP_
-* _Silex_
-* _Twig_
-* _PHPUnit_
-* _Composer_
-* _Terminal_
-* _Git & GitHub_
+There are currently no known bugs.
 
-####License
+## Support and contact details
 
-*This software is licensed under the MIT license.*
+If you have any issues, questions, ideas, or concerns contact me through GitHub. If you would like to make a contribution to the code, feel free to do so and notify me by e-mail.
 
-Copyright (c) 2016 *Jared Beckler*
+## Technologies Used
+
+* HTML
+* CSS
+* PHP
+* mySQL
+
+### License
+
+Copyright &copy; 2016  |  Jared Beckler  |  Epicodus  |  Portland, OR
